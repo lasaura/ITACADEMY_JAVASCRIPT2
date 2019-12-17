@@ -18,9 +18,26 @@ for (i=0;i<nom.length;i++) {
 }
 
 //3er ejercicio
+var nom1 = ['A','L','E','J','A','N','D','R','O'];
+
+var mapanom = new Map();
+
+for (i=0;i<nom1.length;i++) {
+    if (mapanom.has(nom1[i])) {
+
+     mapanom.set(nom1[i], mapanom.get(nom1[i])+1);
+
+    } else {
+
+      (mapanom.set(nom1[i],1));
+  }
+}
+console.log(mapanom);
 
 
 //var nom = ['A','L','3','J','A','N','D','R','0']; PUEDES PROBAR CON ESTE ARRAY TB
+// map, has, get, set ver videos
+/*
 var nom = prompt("Introduce la palabra para poder contar");
 var contar= 0;
 var verif;
@@ -33,7 +50,7 @@ for (i=0;i<nom.length;i ++) {
    }
    console.log(nom[i]+ ":" +contar);
    contar = 0;
-}
+}*/
 
 //4o ejercicio
 
